@@ -1,7 +1,18 @@
-body {
-    display: flex
-
-}
-main {
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 30px;
+  }
+  
+  body {
+    background:white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-}
+  }
+
+  

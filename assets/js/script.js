@@ -23,4 +23,9 @@ var questionsArr = [
 ];
 // variable to keep track of score
 var score = 0;
+// append questions to html
+var countdown = function () {
 
+}
+
+var 
