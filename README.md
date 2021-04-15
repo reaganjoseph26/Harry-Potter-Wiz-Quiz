@@ -5,3 +5,7 @@ Test your knowledge of Harry Potter.
 - include appropiate attributes with id selectors and classes
 # Apply CSS
 - style document with css stylesheet
+
+Deployed Link: https://github.com/reaganjoseph26/Harry-Potter-Wiz-Quiz.git
+
+
