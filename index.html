@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <title>Harry Potter Quiz</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
 </head>
-
 <body>
-    <div class=container>
-        <h1>Harry Potter Wiz Quiz</h1>
-        <p>Just how much do you know about Harry Potter? Test your Wizarding World kowledge taking the following quiz.
-            This quiz is timed and incorrect answer will be penalize your score/time by ten seconds.
-        </p>
-        <button id="start-btn">Start</button>
-
-        <div id="questionContainer">
-
+    <header>
+        <div class="header-div">
+            <ul id="plz-work">
+                <li class="scores"><a href="./assets/js/highscores.html">View High Scores</a></li>
+                <li class="timer">Time: </li>
+            </ul>
         </div>
 
+    </header>
+    <main>
+        <div class="container">
+            <div class="questions-container" style="display: none;">
+                <h2 class="question-title">Title</h2>
+                <ul>
+                    <li class="answer-choice-items"><button class="quiz-button" id="1"></button></li>
+                    <li class="answer-choice-items"><button class="quiz-button" id="2"></button></li>
+                    <li class="answer-choice-items"><button class="quiz-button" id="3"></button></li>
+                    <li class="answer-choice-items"><button class="quiz-button" id="4"></button></li>
+                </ul>
+            </div>
+            <div class="title-div">
+                <h2 class="quiz-title">Harry Potter Quiz</h2>
+            </div>
+            <div class="rules-div">
+                <p class="quiz-rules">Test Your knowledge about Harry Potter by clicking the quiz.  </p>
+            </div>
+            <div class="button-div">
+                <button class="quiz-button" id="begin-quiz">Start Quiz</button>
+            </div>
         </div>
-        <div>
-            <h2 id="count">countdown</h2>
+        <div class="quiz-over" style="display: none;">
+            <h2 class="quiz-over-header">Nicely Done!</h2>
+            <p class="initial-record">Record Your Score - Enter Your Initials</p>
+            <form>
+                <input  class="input-field" id="initials" type="text" name="player-initials" placeholder="Enter Your Initials Here">
+                <button class="button-submit" id="storage-submit" type="reset">Submit</button>
+            </input>
+            </form>
         </div>
-    </div>
-
-    <script src="assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </main>
+    <footer></footer>
 </body>
-
 </html>
